@@ -1,0 +1,150 @@
+body {
+  background-color: #FFF8F0;
+  font-family: "Poppins", sans-serif;
+  color: #183427;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 40px 60px;
+}
+
+.favorites-header {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.favorites-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #183427;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.favorites-line {
+  width: 320px; 
+  border: none;
+  border-top: 1.5px solid rgba(24, 52, 39, 0.3);
+  margin-bottom: 25px;
+}
+
+.favorites-container {
+  width: 100%;
+  max-width: 1200px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+
+.favorites-container::-webkit-scrollbar {
+  height: 6px;
+}
+.favorites-container::-webkit-scrollbar-thumb {
+  background-color: rgba(30, 50, 38, 0.3);
+  border-radius: 10px;
+}
+.favorites-container::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(30, 50, 38, 0.5);
+}
+
+.favorites-list {
+  display: flex;
+  gap: 24px;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.favorite-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.favorite-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  padding: 15px;
+  width: 240px;
+  height: 320px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.favorite-item:hover {
+  transform: translateY(-4px);
+}
+
+.favorite-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.fav-info h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1E3226;
+}
+
+.fav-info p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 3px;
+}
+
+.fav-info .fav-size {
+  font-size: 13px;
+  color: #777;
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+.favorite-wrapper .remove-fav {
+  width: 240px;
+  margin-top: 8px;
+  background-color: #c0392b;
+  color: #fff;
+  border: none;
+  padding: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.favorite-wrapper .remove-fav:hover {
+  background-color: #e74c3c;
+  transform: translateY(-1px);
+}
+
+.empty-favorites {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  margin-top: 80px;
+}
+
+footer {
+  margin-top: auto;
+}

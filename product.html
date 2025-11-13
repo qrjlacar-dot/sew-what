@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Details | Sew What?!</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="collections.css" />
+  <link rel="stylesheet" href="product.css" />
+</head>
+
+<body>
+  <header class="main-header">
+    <nav>
+      <div class="nav-left">
+        <a href="index.html" class="home-link">HOME</a>
+        <span class="divider">|</span>
+        <a href="cart.html"><img src="images/cart.png" alt="Cart" /></a>
+        <a href="favorites.html"><img src="images/favorites.png" alt="Favorites" /></a>
+      </div>
+
+      <div class="nav-center">
+        <form action="#" class="search-form">
+          <img src="images/search.png" alt="Search" class="search-icon" />
+          <input type="text" placeholder="Search..." class="search-input" />
+        </form>
+      </div>
+
+      <div class="nav-right">
+        <a href="message-us.html"><img src="images/message.png" alt="Messages" /></a>
+        <a href="login.html"><img src="images/profile.png" alt="Profile" /></a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="collections-page">
+    <aside class="collections-sidebar" aria-label="Collections">
+      <h3 class="sidebar-title">COLLECTIONS</h3>
+      <ul class="sidebar-list">
+        <li><a href="tops.html" id="sidebar-tops">TOPS</a></li>
+        <li><a href="bottoms.html" id="sidebar-bottoms">BOTTOMS</a></li>
+        <li><a href="dresses.html" id="sidebar-dresses">DRESSES</a></li>
+        <li><a href="outerwear.html" id="sidebar-outerwear">OUTERWEAR</a></li>
+        <li><a href="sets.html" id="sidebar-sets">SETS &amp; COORDINATES</a></li>
+      </ul>
+    </aside>
+
+    <section class="product-detail">
+
+      <div class="product-breadcrumb">
+        <a href="#" id="back-link">← Back to Collection</a>
+      </div>
+
+      <div class="product-wrapper">
+        <div class="product-image">
+          <img id="product-img" src="" alt="Selected Product" />
+        </div>
+
+        <div class="product-info">
+          <h1 id="product-title"></h1>
+          <p id="product-price" class="price"></p>
+
+          <div class="size-section">
+            <h4>Select Size:</h4>
+            <div class="size-options">
+              <button class="size-btn">XS</button>
+              <button class="size-btn">S</button>
+              <button class="size-btn">M</button>
+              <button class="size-btn">L</button>
+              <button class="size-btn">XL</button>
+              <button class="size-btn">XXL</button>
+            </div>
+          </div>
+
+          <button id="add-to-cart-btn" class="add-to-cart">Add to Cart</button>
+          <button id="add-to-favorites-btn" class="add-to-favorites">♡ Add to Favorites</button>
+
+          <div class="product-description">
+            <h4>Description</h4>
+            <p id="product-desc"></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="cart-toast" class="cart-toast">✅ Added to cart!</div>
+    </section>
+  </main>
+
+  <footer class="collections-footer">
+    <p>&copy; 2025 Sew What?! All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="favorites.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | Sew What?!</title>
+
+  <!--Linked Stylesheets-->
+  <link rel="stylesheet" href="style.css" /> <!--Navigation Bar, Footer, and Base Layout-->
+  <link rel="stylesheet" href="collections.css" /> <!--Collection Layout-->
+  <link rel="stylesheet" href="cart.css" /> <!--Checkout/Cart Layout-->
+</head>
+
+<body>
+  <!--Navigation Bar-->
+  <header class="main-header">
+    <nav>
+      <!--Left Side: Home, Cart, and Favorites-->
+      <div class="nav-left">
+        <a href="index.html" class="home-link">HOME</a>
+        <span class="divider">|</span>
+        <a href="cart.html" class="active"><img src="images/cart.png" alt="Cart" /></a>
+        <a href="favorites.html"><img src="images/favorites.png" alt="Favorites" /></a>
+      </div>
+
+      <!--Center: Search Bar-->
+      <div class="nav-center">
+        <form action="#" class="search-form">
+          <img src="images/search.png" alt="Search" class="search-icon" />
+          <input type="text" placeholder="Search..." class="search-input" />
+        </form>
+      </div>
+
+      <!--Right Side: Message Us and Profile-->
+      <div class="nav-right">
+        <a href="message-us.html"><img src="images/message.png" alt="Messages" /></a>
+        <a href="login.html"><img src="images/profile.png" alt="Profile" /></a>
+      </div>
+    </nav>
+  </header>
+
+  <!--Main Checkout/Cart Page-->
+  <main class="checkout-container">
+
+    <!--Left Section: Checkout Form-->
+    <section class="checkout-form">
+      <h1>CHECKOUT</h1>
+      <!--Header (Information, Shipping, and Payment)-->
+      <div class="checkout-steps">
+        <span class="active">Information</span>
+        <span>Shipping</span>
+        <span>Payment</span>
+      </div>
+
+      <!--Checkout Form-->
+      <form>
+        <!--Contact Information-->
+        <h3>CONTACT INFO</h3>
+        <input type="email" placeholder="Email" required />
+        <input type="tel" placeholder="Phone" required />
+
+        <!--Shipping Address-->
+        <h3>SHIPPING ADDRESS</h3>
+        <div class="two-cols">
+          <input type="text" placeholder="First Name" required />
+          <input type="text" placeholder="Last Name" required />
+        </div>
+        <input type="text" placeholder="Country" required />
+        <input type="text" placeholder="State / Region" required />
+        <input type="text" placeholder="Address" required />
+        <div class="two-cols">
+          <input type="text" placeholder="City" required />
+          <input type="text" placeholder="Postal Code" required />
+        </div>
+
+        <!--Shipping Button-->
+        <!--When clicked, transitions to order success page-->
+        <button type="button" class="checkout-next" id="shippingBtn">Shipping →</button>
+      </form>
+    </section>
+
+    <!--Right Section: Checkout/Order Summary-->
+    <section class="checkout-summary">
+      <h2>Your Order <span id="cart-count">(0)</span></h2>
+
+      <!--Cart Items-->
+      <div class="cart-items" id="cart-items"></div>
+
+      <!--Subtotal, Shipping, and Total-->
+      <div class="summary-totals">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="subtotal">₱0.00</span>
+        </div>
+        <div class="summary-row">
+          <span>Shipping</span>
+          <span id="shipping">₱49.00</span>
+        </div>
+        <div class="summary-total">
+          <span>Total</span>
+          <span id="total">₱0.00</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--Footer-->
+  <footer class="collections-footer">
+    <p>&copy; 2025 Sew What?! All rights reserved.</p>
+  </footer>
+
+  <!--Scripts-->
+  <script src="script.js"></script> <!--Main Website Script: Navigation Bar, Favorites, and Product Interactions-->
+  <script src="cart.js"></script> <!--Checkout/Cart Logic: Total, Free Shipping, Order Success, etc.-->
+
+</body>
+
+</html>

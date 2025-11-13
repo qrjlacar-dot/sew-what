@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Set character encoding to UTF-8 to support all text characters -->
+  <meta charset="UTF-8" />
+
+  <!-- Make page responsive on all devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page title shown in browser tab -->
+  <title>Order Success | Sew What?!</title>
+
+  <!-- Link to main CSS file -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Link to page-specific CSS for order success page -->
+  <link rel="stylesheet" href="order-success.css" />
+</head>
+
+<body>
+  <div class="success-box">
+    <h1>Your order will be delivered soon!</h1>
+    <p>Thank you for shopping with <strong>Sew What?!</strong> 💚</p>
+    <a href="index.html" class="home-btn">Return to Home</a>
+  </div>
+  
+  <script>
+    // Add a 'loaded' class to body for animation or styling after page loads
+    window.addEventListener("DOMContentLoaded", () => {
+      document.body.classList.add("loaded");
+    });
+
+    // Clear the cart items from localStorage after checkout
+    localStorage.removeItem("cartItems");
+  </script>
+
+</body>
+
+</html>

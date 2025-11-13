@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Collection — Dresses | Sew What?!</title>
+
+  <!--Linked Stylesheets-->
+  <link rel="stylesheet" href="style.css" />  <!--Navigation Bar, Footer, and Base Layout-->
+  <link rel="stylesheet" href="collections.css" />  <!--Product Collections Layout-->
+</head>
+
+<body>
+  <!--Navigation Bar-->
+  <header class="main-header">
+    <nav>
+      <!--Left Side: Home, Cart, and Favorites-->
+      <div class="nav-left">
+        <a href="index.html" class="home-link">HOME</a>
+        <span class="divider">|</span>
+        <a href="cart.html"><img src="images/cart.png" alt="Cart" /></a>
+        <a href="favorites.html"><img src="images/favorites.png" alt="Favorites" /></a>
+      </div>
+
+      <!--Center: Search Bar-->
+      <div class="nav-center">
+        <form action="#" class="search-form">
+          <img src="images/search.png" alt="Search" class="search-icon" />
+          <input type="text" placeholder="Search..." class="search-input" />
+        </form>
+      </div>
+
+      <!--Right Side: Message Us and Profile-->
+      <div class="nav-right">
+        <a href="message-us.html"><img src="images/message.png" alt="Messages" /></a>
+        <a href="login.html"><img src="images/profile.png" alt="Profile" /></a>
+      </div>
+    </nav>
+  </header>
+
+  <!--Collections Page-->
+  <main class="collections-page">
+    <aside class="collections-sidebar" aria-label="Collections">
+      <h3 class="sidebar-title">COLLECTIONS</h3>
+      <ul class="sidebar-list">
+        <li><a href="tops.html">TOPS</a></li>
+        <li><a href="bottoms.html">BOTTOMS</a></li>
+        <li><a href="dresses.html" class="active">DRESSES</a></li>
+        <li><a href="outerwear.html">OUTERWEAR</a></li>
+        <li><a href="sets.html">SETS &amp; COORDINATES</a></li>
+      </ul>
+    </aside>
+
+    <!--Right Section: Product Display-->
+    <section class="collections-main">
+      <!--Collection Heading-->
+      <header class="collections-heading">
+        <h1>Collection — Dresses</h1>
+      </header>
+
+      <!--Product List-->
+      <section class="products-grid" aria-label="Product list">
+
+        <!--Product 1-->
+        <article class="product-card">
+          <div class="product-media">
+            <img src="dresses/patterned-summer-dress.png" alt="Patterned Summer Dress" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">Patterned Summer Dress</div>
+            <div class="product-price">₱399</div>
+          </div>
+        </article>
+
+        <!--Product 2-->
+        <article class="product-card">
+          <div class="product-media">
+            <img src="dresses/plaid-halter-dress.png" alt="Plaid Halter Dress" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">Plaid Halter Dress</div>
+            <div class="product-price">₱399</div>
+          </div>
+        </article>
+
+        <!--Product 3-->
+        <article class="product-card">
+          <div class="product-media">
+            <img src="dresses/pastel-floral-halter-dress.png" alt="Pastel Floral Halter Dress" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">Pastel Floral Halter Dress</div>
+            <div class="product-price">₱299</div>
+          </div>
+        </article>
+
+        <!--Product 4-->
+        <article class="product-card">
+          <div class="product-media">
+            <img src="dresses/mesh-floral-dress.png" alt="Mesh Floral Dress" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">Mesh Floral Dress</div>
+            <div class="product-price">₱299</div>
+          </div>
+        </article>
+
+        <!--Product 5-->
+        <article class="product-card">
+          <div class="product-media">
+            <img src="dresses/pastel-blue-patterned-dress.png" alt="Pastel Blue Patterned Dress" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">Pastel Blue Patterned Dress</div>
+            <div class="product-price">₱420</div>
+          </div>
+        </article>
+
+        <!--Product 6-->
+        <article class="product-card">
+          <div class="product-media">
+            <img src="dresses/black-polka-dots-dress.png" alt="Black Polka Dots Dress" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">Black Polka Dots Dress</div>
+            <div class="product-price">₱299</div>
+          </div>
+        </article>
+
+      </section>
+    </section>
+  </main>
+
+  <!--Footer-->
+  <footer class="collections-footer">
+    <p>&copy; 2025 Sew What?! All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script> <!--Main Website Script: Navigation Bar, Favorites, and Product Interactions-->
+
+</body>
+
+</html>
